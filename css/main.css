@@ -1,0 +1,119 @@
+body {
+	font-family: sans-serif;
+	font-size: 12pt;
+	color: #222;
+	background-color: #eee;
+}
+strong {
+	font-weight: 700;
+}
+.header, .wrapper {
+	min-width: 700px;
+}
+
+.header {
+	width: calc(100% - 32px);
+	height: 64px;
+	line-height: 64px;
+	padding-left: 16px;
+	padding-right: 16px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	background-color: #333;
+	color: #eee;
+}
+.header .right {
+	float: right;
+}
+.header .left {
+	float: left;
+}
+#lastUpdated {
+	font-size: 9pt;
+	color: #999;
+}
+.header h1 {
+	font-size: 24pt;
+	font-family: monospace;
+	font-weight: 700;
+}
+
+.wrapper {
+	width: calc(100% - 32px);
+	padding: 16px;
+	line-height: 20pt;
+}
+
+.repository {
+	margin-bottom: 48px;
+	background-color: #fff;
+	padding: 16px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.repository h1 {
+	font-size: 16pt;
+	font-weight: 700;
+	margin-bottom: 8px;
+	float: left;
+}
+.repository table {
+	width: 100%;
+	table-layout: fixed;
+}
+.repository .table_wrap {
+	margin-bottom: 16px;
+}
+.repository .table_wrap:last-child {
+	margin-bottom: 0px;
+}
+.repository tr td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.repository tr td:nth-child(1) {
+	width: 100px;
+}
+.repository tr:nth-child(even) td:nth-child(1) {
+	background-color: #eee;
+}
+.repository tr:nth-child(odd) td:nth-child(1) {
+	background-color: #e6e6e6;
+}
+.repository .status {
+	float: right;
+	font-size: 9pt;
+	line-height: 11pt;
+	text-align: right;
+}
+.repository .status img {
+	vertical-align: text-bottom;
+}
+.repository .source {
+    display: block;
+    font-size: 8pt;
+    line-height: 0pt;
+    width: 600px;
+    /* honestly i dont know either */
+}
+
+.repo_list {
+	width: calc(100% - 32px);
+	background-color: #333;
+	padding: 16px;
+	margin-bottom: 24px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.repo_list a {
+	display: inline-block;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	padding: 4px;
+	color: #fff;
+}
+.repo_list a:hover {
+	color: #0af;
+}
